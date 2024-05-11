@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "vue-tsc"
+    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite"
   },
   "private": true,
   "dependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.11",
     "vue": "^3.4.27"
   },
   "devDependencies": {
